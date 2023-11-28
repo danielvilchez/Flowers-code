@@ -1,10 +1,12 @@
 /* estilos.css */
 
 h1 {
-    color: rgb(192, 141, 147);
+    color: white;
     text-align: center;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(192, 141, 147) ;
+    padding: 20px;
 }
 
 .parrafo {
@@ -42,9 +44,22 @@ p{
     color: #A9B3CE;
 }
 
-
-
 img {
     display: block; /* Hace que la imagen sea un bloque para poder centrarla */
     margin: 0 auto; /* Ajusta el margen para centrar horizontalmente */
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    .parrafo {
+        width: 100%; /* El texto ocupará el 100% del ancho en pantallas pequeñas */
+    }
+
+    .contenedor {
+        flex-direction: column; /* Apila los elementos en columnas en lugar de filas */
+    }
+
+    iframe {
+        width: 100%; /* El video ocupará el 100% del ancho en pantallas pequeñas */
+    }
 }
